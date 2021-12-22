@@ -1,7 +1,114 @@
+@import "https://fonts.google.com/specimen/Outfit:300,400,600";
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 0 0;
+  max-width: 1440px;
+  position: relative;
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  justify-items: center;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 25px;
+}
+
+.card {
+  margin: 25px;
+}
+
+.equil > img {
+  margin-top: 25px;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.equil > img:hover {
+  color: hsl(215, 51%, 70%);
+}
+.card > h4 {
+  color: hsl(0, 0%, 100%);
+}
+
+.coin-detail {
+  display: flex;
+  width: 100%;
+}
+.eth {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.day {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  margin-left: 25%;
+}
+.eth > img {
+  height: 40%;
+  margin-right: 5%;
+}
+.eth > h3 {
+  color: hsl(178, 100%, 50%);
+}
+.day > img {
+  height: 35%;
+  margin-right: 5%;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  position: relative;
+  top: -5px;
+  margin-left: 20px;
+  margin-right: 5px;
+  line-height: 1.5;
+  border-radius: 50%;
+  background-color: white;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40%;
+}
+.footer > img {
+  width: 8%;
+  height: 8%;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  #header-img {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
 }
